@@ -1,0 +1,6 @@
+framework module Pods_hashtags {
+  umbrella header "Pods-hashtags-umbrella.h"
+
+  export *
+  module * { export * }
+}

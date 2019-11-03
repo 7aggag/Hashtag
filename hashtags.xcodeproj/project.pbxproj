@@ -7,21 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71C3A8CF1D1291851B3B9749 /* Pods_hashtags.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131A3799F992250FAD1B7D05 /* Pods_hashtags.framework */; };
 		732F7E7F236E0BD500F02068 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732F7E7E236E0BD500F02068 /* AppDelegate.swift */; };
-		732F7E81236E0BD500F02068 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732F7E80236E0BD500F02068 /* ViewController.swift */; };
 		732F7E84236E0BD500F02068 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 732F7E82236E0BD500F02068 /* Main.storyboard */; };
 		732F7E86236E0BDB00F02068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 732F7E85236E0BDB00F02068 /* Assets.xcassets */; };
 		732F7E89236E0BDB00F02068 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 732F7E87236E0BDB00F02068 /* LaunchScreen.storyboard */; };
+		732F7E94236E11EA00F02068 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 732F7E93236E11EA00F02068 /* SWRevealViewController.m */; };
+		732F7E99236E393700F02068 /* gridant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732F7E98236E393700F02068 /* gridant.swift */; };
+		732F7E9B236E3BAE00F02068 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732F7E9A236E3BAE00F02068 /* ChatVC.swift */; };
+		732F7E9D236E3BCF00F02068 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732F7E9C236E3BCF00F02068 /* ChannelVC.swift */; };
+		73CE1188236ED7A000D6BC99 /* viewgradiant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CE1187236ED7A000D6BC99 /* viewgradiant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		131A3799F992250FAD1B7D05 /* Pods_hashtags.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hashtags.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		732F7E7B236E0BD500F02068 /* hashtags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hashtags.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		732F7E7E236E0BD500F02068 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		732F7E80236E0BD500F02068 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		732F7E83236E0BD500F02068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		732F7E85236E0BDB00F02068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		732F7E88236E0BDB00F02068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		732F7E8A236E0BDB00F02068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		732F7E91236E11E900F02068 /* hashtags-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hashtags-Bridging-Header.h"; sourceTree = "<group>"; };
+		732F7E92236E11EA00F02068 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		732F7E93236E11EA00F02068 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		732F7E98236E393700F02068 /* gridant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gridant.swift; sourceTree = "<group>"; };
+		732F7E9A236E3BAE00F02068 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		732F7E9C236E3BCF00F02068 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		73CE1187236ED7A000D6BC99 /* viewgradiant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewgradiant.swift; sourceTree = "<group>"; };
+		D940C6701542E663D6C33617 /* Pods-hashtags.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hashtags.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hashtags/Pods-hashtags.debug.xcconfig"; sourceTree = "<group>"; };
+		EA3B46FC9ABACA7A0B29CE74 /* Pods-hashtags.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hashtags.release.xcconfig"; path = "Pods/Target Support Files/Pods-hashtags/Pods-hashtags.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71C3A8CF1D1291851B3B9749 /* Pods_hashtags.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C51D233087FAD31927F2C3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D940C6701542E663D6C33617 /* Pods-hashtags.debug.xcconfig */,
+				EA3B46FC9ABACA7A0B29CE74 /* Pods-hashtags.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		732F7E72236E0BD400F02068 = {
 			isa = PBXGroup;
 			children = (
 				732F7E7D236E0BD500F02068 /* hashtags */,
 				732F7E7C236E0BD500F02068 /* Products */,
+				5C51D233087FAD31927F2C3E /* Pods */,
+				C5407438FB1D52B82F7EE96E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +80,60 @@
 		732F7E7D236E0BD500F02068 /* hashtags */ = {
 			isa = PBXGroup;
 			children = (
+				732F7E97236E38D800F02068 /* model */,
+				732F7E96236E38C500F02068 /* view */,
+				732F7E95236E38AE00F02068 /* control */,
+				732F7E90236E11B000F02068 /* SupportingFiles */,
 				732F7E7E236E0BD500F02068 /* AppDelegate.swift */,
-				732F7E80236E0BD500F02068 /* ViewController.swift */,
 				732F7E82236E0BD500F02068 /* Main.storyboard */,
 				732F7E85236E0BDB00F02068 /* Assets.xcassets */,
 				732F7E87236E0BDB00F02068 /* LaunchScreen.storyboard */,
 				732F7E8A236E0BDB00F02068 /* Info.plist */,
 			);
 			path = hashtags;
+			sourceTree = "<group>";
+		};
+		732F7E90236E11B000F02068 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				732F7E92236E11EA00F02068 /* SWRevealViewController.h */,
+				732F7E93236E11EA00F02068 /* SWRevealViewController.m */,
+				732F7E91236E11E900F02068 /* hashtags-Bridging-Header.h */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		732F7E95236E38AE00F02068 /* control */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = control;
+			sourceTree = "<group>";
+		};
+		732F7E96236E38C500F02068 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				732F7E98236E393700F02068 /* gridant.swift */,
+				732F7E9A236E3BAE00F02068 /* ChatVC.swift */,
+				732F7E9C236E3BCF00F02068 /* ChannelVC.swift */,
+				73CE1187236ED7A000D6BC99 /* viewgradiant.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		732F7E97236E38D800F02068 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		C5407438FB1D52B82F7EE96E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				131A3799F992250FAD1B7D05 /* Pods_hashtags.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 732F7E8D236E0BDB00F02068 /* Build configuration list for PBXNativeTarget "hashtags" */;
 			buildPhases = (
+				43A9CF7D8A87B27B944C22E3 /* [CP] Check Pods Manifest.lock */,
 				732F7E77236E0BD500F02068 /* Sources */,
 				732F7E78236E0BD500F02068 /* Frameworks */,
 				732F7E79236E0BD500F02068 /* Resources */,
+				B6476F01011B4B21CF71D245 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +170,7 @@
 				TargetAttributes = {
 					732F7E7A236E0BD500F02068 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,13 +205,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		43A9CF7D8A87B27B944C22E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hashtags-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6476F01011B4B21CF71D245 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-hashtags/Pods-hashtags-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hashtags/Pods-hashtags-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		732F7E77236E0BD500F02068 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				732F7E81236E0BD500F02068 /* ViewController.swift in Sources */,
+				732F7E9B236E3BAE00F02068 /* ChatVC.swift in Sources */,
 				732F7E7F236E0BD500F02068 /* AppDelegate.swift in Sources */,
+				73CE1188236ED7A000D6BC99 /* viewgradiant.swift in Sources */,
+				732F7E94236E11EA00F02068 /* SWRevealViewController.m in Sources */,
+				732F7E99236E393700F02068 /* gridant.swift in Sources */,
+				732F7E9D236E3BCF00F02068 /* ChannelVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,9 +404,12 @@
 		};
 		732F7E8E236E0BDB00F02068 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D940C6701542E663D6C33617 /* Pods-hashtags.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 636VC5LYQG;
 				INFOPLIST_FILE = hashtags/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,6 +417,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fst.hashtags;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "hashtags/SupportingFiles/hashtags-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,9 +426,12 @@
 		};
 		732F7E8F236E0BDB00F02068 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA3B46FC9ABACA7A0B29CE74 /* Pods-hashtags.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 636VC5LYQG;
 				INFOPLIST_FILE = hashtags/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +439,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fst.hashtags;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "hashtags/SupportingFiles/hashtags-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
