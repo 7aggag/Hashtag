@@ -16,7 +16,8 @@
 		732F7E99236E393700F02068 /* gridant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732F7E98236E393700F02068 /* gridant.swift */; };
 		732F7E9B236E3BAE00F02068 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732F7E9A236E3BAE00F02068 /* ChatVC.swift */; };
 		732F7E9D236E3BCF00F02068 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732F7E9C236E3BCF00F02068 /* ChannelVC.swift */; };
-		73CE1188236ED7A000D6BC99 /* viewgradiant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CE1187236ED7A000D6BC99 /* viewgradiant.swift */; };
+		73CE118A236F298000D6BC99 /* loginvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CE1189236F298000D6BC99 /* loginvc.swift */; };
+		73CE118C236F464F00D6BC99 /* createaccountvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CE118B236F464F00D6BC99 /* createaccountvc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +34,8 @@
 		732F7E98236E393700F02068 /* gridant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gridant.swift; sourceTree = "<group>"; };
 		732F7E9A236E3BAE00F02068 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		732F7E9C236E3BCF00F02068 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
-		73CE1187236ED7A000D6BC99 /* viewgradiant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewgradiant.swift; sourceTree = "<group>"; };
+		73CE1189236F298000D6BC99 /* loginvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginvc.swift; sourceTree = "<group>"; };
+		73CE118B236F464F00D6BC99 /* createaccountvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createaccountvc.swift; sourceTree = "<group>"; };
 		D940C6701542E663D6C33617 /* Pods-hashtags.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hashtags.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hashtags/Pods-hashtags.debug.xcconfig"; sourceTree = "<group>"; };
 		EA3B46FC9ABACA7A0B29CE74 /* Pods-hashtags.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hashtags.release.xcconfig"; path = "Pods/Target Support Files/Pods-hashtags/Pods-hashtags.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,7 +118,8 @@
 				732F7E98236E393700F02068 /* gridant.swift */,
 				732F7E9A236E3BAE00F02068 /* ChatVC.swift */,
 				732F7E9C236E3BCF00F02068 /* ChannelVC.swift */,
-				73CE1187236ED7A000D6BC99 /* viewgradiant.swift */,
+				73CE1189236F298000D6BC99 /* loginvc.swift */,
+				73CE118B236F464F00D6BC99 /* createaccountvc.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -255,9 +258,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73CE118C236F464F00D6BC99 /* createaccountvc.swift in Sources */,
 				732F7E9B236E3BAE00F02068 /* ChatVC.swift in Sources */,
 				732F7E7F236E0BD500F02068 /* AppDelegate.swift in Sources */,
-				73CE1188236ED7A000D6BC99 /* viewgradiant.swift in Sources */,
+				73CE118A236F298000D6BC99 /* loginvc.swift in Sources */,
 				732F7E94236E11EA00F02068 /* SWRevealViewController.m in Sources */,
 				732F7E99236E393700F02068 /* gridant.swift in Sources */,
 				732F7E9D236E3BCF00F02068 /* ChannelVC.swift in Sources */,
