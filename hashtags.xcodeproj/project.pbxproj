@@ -18,6 +18,9 @@
 		732F7E9D236E3BCF00F02068 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732F7E9C236E3BCF00F02068 /* ChannelVC.swift */; };
 		73CE118A236F298000D6BC99 /* loginvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CE1189236F298000D6BC99 /* loginvc.swift */; };
 		73CE118C236F464F00D6BC99 /* createaccountvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CE118B236F464F00D6BC99 /* createaccountvc.swift */; };
+		73CE1190237079DC00D6BC99 /* Authservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CE118F237079DC00D6BC99 /* Authservice.swift */; };
+		73CE119223707F5E00D6BC99 /* Serconstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CE119123707F5E00D6BC99 /* Serconstant.swift */; };
+		73CE11942371A5FA00D6BC99 /* Userdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CE11932371A5FA00D6BC99 /* Userdata.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		732F7E9C236E3BCF00F02068 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		73CE1189236F298000D6BC99 /* loginvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginvc.swift; sourceTree = "<group>"; };
 		73CE118B236F464F00D6BC99 /* createaccountvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createaccountvc.swift; sourceTree = "<group>"; };
+		73CE118F237079DC00D6BC99 /* Authservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authservice.swift; sourceTree = "<group>"; };
+		73CE119123707F5E00D6BC99 /* Serconstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serconstant.swift; sourceTree = "<group>"; };
+		73CE11932371A5FA00D6BC99 /* Userdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Userdata.swift; sourceTree = "<group>"; };
 		D940C6701542E663D6C33617 /* Pods-hashtags.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hashtags.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hashtags/Pods-hashtags.debug.xcconfig"; sourceTree = "<group>"; };
 		EA3B46FC9ABACA7A0B29CE74 /* Pods-hashtags.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hashtags.release.xcconfig"; path = "Pods/Target Support Files/Pods-hashtags/Pods-hashtags.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +88,7 @@
 		732F7E7D236E0BD500F02068 /* hashtags */ = {
 			isa = PBXGroup;
 			children = (
+				73CE118E237079AB00D6BC99 /* services */,
 				732F7E97236E38D800F02068 /* model */,
 				732F7E96236E38C500F02068 /* view */,
 				732F7E95236E38AE00F02068 /* control */,
@@ -129,6 +136,16 @@
 			children = (
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		73CE118E237079AB00D6BC99 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				73CE118F237079DC00D6BC99 /* Authservice.swift */,
+				73CE119123707F5E00D6BC99 /* Serconstant.swift */,
+				73CE11932371A5FA00D6BC99 /* Userdata.swift */,
+			);
+			path = services;
 			sourceTree = "<group>";
 		};
 		C5407438FB1D52B82F7EE96E /* Frameworks */ = {
@@ -259,12 +276,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				73CE118C236F464F00D6BC99 /* createaccountvc.swift in Sources */,
+				73CE119223707F5E00D6BC99 /* Serconstant.swift in Sources */,
 				732F7E9B236E3BAE00F02068 /* ChatVC.swift in Sources */,
 				732F7E7F236E0BD500F02068 /* AppDelegate.swift in Sources */,
 				73CE118A236F298000D6BC99 /* loginvc.swift in Sources */,
 				732F7E94236E11EA00F02068 /* SWRevealViewController.m in Sources */,
+				73CE11942371A5FA00D6BC99 /* Userdata.swift in Sources */,
 				732F7E99236E393700F02068 /* gridant.swift in Sources */,
 				732F7E9D236E3BCF00F02068 /* ChannelVC.swift in Sources */,
+				73CE1190237079DC00D6BC99 /* Authservice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

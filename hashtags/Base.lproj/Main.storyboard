@@ -436,6 +436,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Choose avatar"/>
+                                <connections>
+                                    <action selector="choseavatarbtnpressed:" destination="oEI-fp-lPI" eventType="touchUpInside" id="en3-VG-b3D"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCV-LK-dOP">
                                 <rect key="frame" x="104.5" y="505.5" width="166" height="30"/>
@@ -444,6 +447,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="Genearte background color"/>
+                                <connections>
+                                    <action selector="geneartebckcolorbtnpressed:" destination="oEI-fp-lPI" eventType="touchUpInside" id="iAU-pd-Nxt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hL5-UF-SRU">
                                 <rect key="frame" x="113" y="602" width="149" height="39"/>
@@ -454,6 +460,9 @@
                                 <state key="normal" title="     Create account      ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="registeraaccountbtnpressed:" destination="oEI-fp-lPI" eventType="touchUpInside" id="NHm-o9-qsc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -477,6 +486,12 @@
                         <viewLayoutGuide key="safeArea" id="eXG-ij-tnL"/>
                     </view>
                     <connections>
+                        <outlet property="avatarimage" destination="ENV-qw-CTu" id="r3V-X1-bRl"/>
+                        <outlet property="choseavatarbtn" destination="33J-lb-b5C" id="RSX-l4-wM1"/>
+                        <outlet property="emailtf" destination="emZ-WK-PVa" id="BCw-ad-HIs"/>
+                        <outlet property="passwordtf" destination="Hfh-zE-WcH" id="qhA-Ez-XQG"/>
+                        <outlet property="registeruserbtn" destination="hL5-UF-SRU" id="lA5-sF-3Li"/>
+                        <outlet property="usernametf" destination="jdP-cG-hKc" id="rvF-TA-0R2"/>
                         <segue destination="e93-uP-KZc" kind="unwind" identifier="unwindtochannelvc" unwindAction="prepareforunwindWithSegue:" id="cSW-Gu-p5R"/>
                     </connections>
                 </viewController>
