@@ -18,28 +18,33 @@ class createaccountvc: UIViewController {
     @IBOutlet weak var registeruserbtn : UIButton!
     @IBOutlet weak var choseavatarbtn : UIButton!
     @IBOutlet weak var avatarimage : UIImageView!
+    @IBOutlet weak var progrss :UIActivityIndicatorView!
     
     
     // variables
     
         var avatr0name = "dark12"
         var avatart0color = "hexValue"
+        var bgcolor :UIColor?
     
     
     override func viewDidAppear(_ animated: Bool) {
         
         if  Userdata.instance.avatarname != "" {
-            
             self.avatarimage.image=UIImage(named:Userdata.instance.avatarname )
             self.avatr0name = Userdata.instance.avatarname
+            if avatr0name.contains("light") && bgcolor==nil {
+                avatarimage.backgroundColor=UIColor.lightGray
+            }
             
         }
+        
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupview()
         // Do any additional setup after loading the view.
     }
     
@@ -54,6 +59,8 @@ performSegue(withIdentifier: "unwindtochannelvc", sender: nil)
     }
     
     @IBAction func registeraaccountbtnpressed(_ sender: Any) {
+        progrss.isHidden = false
+        progrss.startAnimating()
         
         guard let email = emailtf.text?.lowercased() , emailtf.text != ""  else{return}
          guard let pass = passwordtf.text?.lowercased() , passwordtf.text != ""  else{return}
@@ -65,34 +72,24 @@ performSegue(withIdentifier: "unwindtochannelvc", sender: nil)
                         print ("done 2")
                         Authserices.instance.adduser(name: name, email: email, avatarname: self.avatr0name , avatarcokor: self.avatart0color , complection: { (sucess) in
                             if sucess{
-                                print ("done 3")
-                                 print(Userdata.instance._id)
+                            self.progrss.isHidden = true
+                            self.progrss.stopAnimating()
+                                
                                 self.performSegue(withIdentifier: "unwindtochannelvc", sender: nil)
-                               
+                                NotificationCenter.default.post(name: NOTI_USE_DATA_DID_CHANGE, object: nil)
                                 
-                                
-                                
-                            }
-                            
-                            
-                        })
-                        
-                        
-                    }
-                })
-                
-            }
-          
-            
-            
-        }
-        
-        
+                            }})}})}}
+
     }
     
     @IBAction func geneartebckcolorbtnpressed(_ sender: Any) {
         
+        let r =  CGFloat( arc4random_uniform(255))/255
+        let g = CGFloat( arc4random_uniform(255))/255
+        let b = CGFloat( arc4random_uniform(255))/255
         
+        bgcolor = UIColor(red: r, green: g, blue: b, alpha: 1)
+        self.avatarimage.backgroundColor=bgcolor
     }
   
     
@@ -102,6 +99,27 @@ performSegue(withIdentifier: "unwindtochannelvc", sender: nil)
         
     }
     
+    
+    func setupview(){
+        
+        //progress
+        progrss.isHidden = true
+        //txtfiel
+        let color = #colorLiteral(red: 0, green: 0.3722015275, blue: 0.7716529188, alpha: 1)
+        usernametf.attributedPlaceholder = NSAttributedString(string: "username", attributes: [NSAttributedString.Key.foregroundColor : color])
+        passwordtf.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor : color])
+        emailtf.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor : color])
+        
+        
+        //gesture
+        
+        let tap = UIGestureRecognizer(target: self, action: #selector(createaccountvc.tapscreen) )
+        view.addGestureRecognizer(tap)
+    }
+    
+   @objc  func tapscreen (){
+        view.endEditing(true)
+    }
     
     
 }

@@ -26,7 +26,9 @@ let EMAIL = "UserEmail"
 let TOKEN_ID = "TokenId"
 
 
+//notifcation
 
+let NOTI_USE_DATA_DID_CHANGE = Notification.Name("notfidatauserchanged")
 
 
 

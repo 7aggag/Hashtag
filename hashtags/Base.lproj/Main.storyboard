@@ -105,7 +105,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="6sh-Lb-SgH">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="6sh-Lb-SgH" customClass="circularimage" customModule="hashtags" customModuleProvider="target">
                                 <rect key="frame" x="16" y="573" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="8tP-dq-ql0"/>
@@ -369,7 +369,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KzL-w9-FDN">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KzL-w9-FDN" customClass="circularimage" customModule="hashtags" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                 </imageView>
                                             </subviews>
@@ -507,7 +507,7 @@
                                     <constraint firstAttribute="trailing" secondItem="Hfh-zE-WcH" secondAttribute="trailing" id="zb5-q6-mja"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="ENV-qw-CTu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="ENV-qw-CTu" customClass="circularimage" customModule="hashtags" customModuleProvider="target">
                                 <rect key="frame" x="142.5" y="389" width="90" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="HSQ-9B-nQA"/>
@@ -550,12 +550,20 @@
                                     <action selector="registeraaccountbtnpressed:" destination="oEI-fp-lPI" eventType="touchUpInside" id="NHm-o9-qsc"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="HwB-I4-Ds3">
+                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="B3H-W2-tU8"/>
+                                    <constraint firstAttribute="width" constant="80" id="rMu-RQ-zV4"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="eXG-ij-tnL" firstAttribute="trailing" secondItem="XWc-zz-gT3" secondAttribute="trailing" constant="20" id="2uP-Ve-dNJ"/>
                             <constraint firstItem="hL5-UF-SRU" firstAttribute="centerX" secondItem="TUU-84-pt8" secondAttribute="centerX" id="6vm-16-W0b"/>
                             <constraint firstItem="eXG-ij-tnL" firstAttribute="bottom" secondItem="hL5-UF-SRU" secondAttribute="bottom" constant="26" id="8mB-yx-M6z"/>
+                            <constraint firstItem="HwB-I4-Ds3" firstAttribute="centerX" secondItem="TUU-84-pt8" secondAttribute="centerX" id="EqW-N5-gC2"/>
                             <constraint firstItem="33J-lb-b5C" firstAttribute="firstBaseline" secondItem="ENV-qw-CTu" secondAttribute="baseline" constant="21" symbolType="layoutAnchor" id="K8c-LM-vcT"/>
                             <constraint firstItem="ENV-qw-CTu" firstAttribute="centerX" secondItem="TUU-84-pt8" secondAttribute="centerX" id="MLv-OK-YXl"/>
                             <constraint firstItem="ouc-X0-Abo" firstAttribute="top" secondItem="eXG-ij-tnL" secondAttribute="top" constant="55" id="MNe-zM-mJP"/>
@@ -564,6 +572,7 @@
                             <constraint firstItem="esa-tq-1pe" firstAttribute="top" secondItem="eXG-ij-tnL" secondAttribute="top" constant="25" id="Rw7-kc-R6c"/>
                             <constraint firstItem="XWc-zz-gT3" firstAttribute="top" secondItem="ouc-X0-Abo" secondAttribute="bottom" constant="70" id="UsI-zc-GZI"/>
                             <constraint firstItem="eXG-ij-tnL" firstAttribute="trailing" secondItem="esa-tq-1pe" secondAttribute="trailing" constant="15" id="eKh-ES-PXr"/>
+                            <constraint firstItem="HwB-I4-Ds3" firstAttribute="centerY" secondItem="TUU-84-pt8" secondAttribute="centerY" id="h8W-qL-JdU"/>
                             <constraint firstItem="ouc-X0-Abo" firstAttribute="centerX" secondItem="TUU-84-pt8" secondAttribute="centerX" id="i0X-hZ-GFg"/>
                             <constraint firstItem="fCV-LK-dOP" firstAttribute="firstBaseline" secondItem="33J-lb-b5C" secondAttribute="baseline" constant="25" id="m0O-gB-ecL"/>
                             <constraint firstItem="33J-lb-b5C" firstAttribute="centerX" secondItem="ENV-qw-CTu" secondAttribute="centerX" id="uJk-YL-JCF"/>
@@ -576,6 +585,7 @@
                         <outlet property="choseavatarbtn" destination="33J-lb-b5C" id="RSX-l4-wM1"/>
                         <outlet property="emailtf" destination="emZ-WK-PVa" id="BCw-ad-HIs"/>
                         <outlet property="passwordtf" destination="Hfh-zE-WcH" id="qhA-Ez-XQG"/>
+                        <outlet property="progrss" destination="HwB-I4-Ds3" id="yhA-zU-Q3I"/>
                         <outlet property="registeruserbtn" destination="hL5-UF-SRU" id="lA5-sF-3Li"/>
                         <outlet property="usernametf" destination="jdP-cG-hKc" id="rvF-TA-0R2"/>
                         <segue destination="e93-uP-KZc" kind="unwind" identifier="unwindtochannelvc" unwindAction="prepareforunwindWithSegue:" id="cSW-Gu-p5R"/>

@@ -23,6 +23,7 @@
 		73CE11942371A5FA00D6BC99 /* Userdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CE11932371A5FA00D6BC99 /* Userdata.swift */; };
 		73CE119623722E8300D6BC99 /* AvatarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CE119523722E8300D6BC99 /* AvatarVC.swift */; };
 		73CE119823722FB700D6BC99 /* avatarcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CE119723722FB700D6BC99 /* avatarcell.swift */; };
+		73CE119C23726DEE00D6BC99 /* circularimage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CE119B23726DEE00D6BC99 /* circularimage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		73CE11932371A5FA00D6BC99 /* Userdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Userdata.swift; sourceTree = "<group>"; };
 		73CE119523722E8300D6BC99 /* AvatarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarVC.swift; sourceTree = "<group>"; };
 		73CE119723722FB700D6BC99 /* avatarcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = avatarcell.swift; sourceTree = "<group>"; };
+		73CE119B23726DEE00D6BC99 /* circularimage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = circularimage.swift; sourceTree = "<group>"; };
 		D940C6701542E663D6C33617 /* Pods-hashtags.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hashtags.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hashtags/Pods-hashtags.debug.xcconfig"; sourceTree = "<group>"; };
 		EA3B46FC9ABACA7A0B29CE74 /* Pods-hashtags.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hashtags.release.xcconfig"; path = "Pods/Target Support Files/Pods-hashtags/Pods-hashtags.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +135,7 @@
 			children = (
 				732F7E98236E393700F02068 /* gridant.swift */,
 				73CE119723722FB700D6BC99 /* avatarcell.swift */,
+				73CE119B23726DEE00D6BC99 /* circularimage.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				73CE119823722FB700D6BC99 /* avatarcell.swift in Sources */,
 				73CE11942371A5FA00D6BC99 /* Userdata.swift in Sources */,
 				732F7E99236E393700F02068 /* gridant.swift in Sources */,
+				73CE119C23726DEE00D6BC99 /* circularimage.swift in Sources */,
 				732F7E9D236E3BCF00F02068 /* ChannelVC.swift in Sources */,
 				73CE1190237079DC00D6BC99 /* Authservice.swift in Sources */,
 				73CE119623722E8300D6BC99 /* AvatarVC.swift in Sources */,
