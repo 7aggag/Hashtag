@@ -20,10 +20,22 @@ class createaccountvc: UIViewController {
     @IBOutlet weak var avatarimage : UIImageView!
     
     
+    // variables
+    
+        var avatr0name = "dark12"
+        var avatart0color = "hexValue"
     
     
-        let avatr0name = "dark12"
-        let avatart0color = "hexValue"
+    override func viewDidAppear(_ animated: Bool) {
+        
+        if  Userdata.instance.avatarname != "" {
+            
+            self.avatarimage.image=UIImage(named:Userdata.instance.avatarname )
+            self.avatr0name = Userdata.instance.avatarname
+            
+        }
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,9 +91,16 @@ performSegue(withIdentifier: "unwindtochannelvc", sender: nil)
     }
     
     @IBAction func geneartebckcolorbtnpressed(_ sender: Any) {
+        
+        
     }
-
+  
     
+    @IBAction func choseavatar (_ sender : Any ) {
+        
+        performSegue(withIdentifier: "toavatarvc", sender: nil)
+        
+    }
     
     
     
