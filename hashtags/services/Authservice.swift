@@ -77,10 +77,6 @@
             let header = ["Authorization": "Bearer \(Authserices.instance.tokenid)" , "Content-Type" : "application/json" ]
             let body : [String : Any] = ["email": loweemail ,"name":name,"avatarName" : avatarname , "avatarColor" : avatarcokor]
             
-            
-            
-        
-            
             Alamofire.request(ADD_USER_URL, method: .post, parameters: body , encoding: JSONEncoding.default , headers: header).responseJSON { (response) in
                 if response.result.error == nil {
                     guard let data = response.data else {return}
@@ -99,29 +95,32 @@
                     complection(false)
                     debugPrint(response.result.error as Any)
                 }}
-            
-            
-            
-            
-            
       }
        
         
-        
+        func finduserbyemail(completion :@escaping CompletionHandelar){
+             let header = ["Authorization": "Bearer \(Authserices.instance.tokenid)" , "Content-Type" : "application/json" ]
+            Alamofire.request("\(LOGIN_WITH_EMAIL_URL)\(useremail)", method: .get, parameters: nil , encoding: JSONEncoding.default , headers: header).responseJSON { (response) in
+                if response.result.error == nil {
+                    guard let data = response.data else {return}
+                    let json = try? JSON(data: data)
+                    let id = json!["_id"].stringValue
+                    let avatarc0olor = json!["avatarColor"].stringValue
+                    let avatarname = json!["avatarName"].stringValue
+                    let email = json!["email"].stringValue
+                    let name = json!["name"].stringValue
+                    
+                   
+                    Userdata.instance.setuser(name: name, email: email, id: id, avatarcolor: avatarc0olor, avatarname: avatarname)
+                    completion(true)
+                }
+                else  {
+                    completion(false)
+                    debugPrint(response.result.error as Any)
+                }
+            
+        }
         
         
             }
-            
-            
-
-            
-    
-    
-        
-        
-        
-        
-    
-    
-    
-    
+    }

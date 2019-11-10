@@ -24,7 +24,7 @@ class createaccountvc: UIViewController {
     // variables
     
         var avatr0name = "dark12"
-        var avatart0color = "hexValue"
+        var avatart0color = "[0.05 , 0.05  ,0.5 , 1 ]"
         var bgcolor :UIColor?
     
     
@@ -69,7 +69,6 @@ performSegue(withIdentifier: "unwindtochannelvc", sender: nil)
             if sucess {
                 Authserices.instance.loginuser(email: email, Password: pass, complection: { (sucess) in
                     if sucess{
-                        print ("done 2")
                         Authserices.instance.adduser(name: name, email: email, avatarname: self.avatr0name , avatarcokor: self.avatart0color , complection: { (sucess) in
                             if sucess{
                             self.progrss.isHidden = true
@@ -87,7 +86,7 @@ performSegue(withIdentifier: "unwindtochannelvc", sender: nil)
         let r =  CGFloat( arc4random_uniform(255))/255
         let g = CGFloat( arc4random_uniform(255))/255
         let b = CGFloat( arc4random_uniform(255))/255
-        
+        avatart0color = "[ \(r), \(g), \(b), 1]"
         bgcolor = UIColor(red: r, green: g, blue: b, alpha: 1)
         self.avatarimage.backgroundColor=bgcolor
     }

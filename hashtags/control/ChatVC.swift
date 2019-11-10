@@ -6,6 +6,7 @@
 //  Copyright © 2019 mohamed haggag. All rights reserved.
 //
 
+
 import UIKit
 
 
@@ -21,5 +22,13 @@ class ChatVC: UIViewController {
         self.view.addGestureRecognizer((self.revealViewController().tapGestureRecognizer()))
         self.view.addGestureRecognizer((self.revealViewController().panGestureRecognizer()))
 
+        if Authserices.instance.isloggedin{
+            Authserices.instance.finduserbyemail { (scuss) in
+                if scuss{ NotificationCenter.default.post(name: NOTI_USE_DATA_DID_CHANGE, object: nil)}
+            }
+            
+        }
+        
+        
 }
 }
