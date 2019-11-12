@@ -29,6 +29,9 @@ class ChatVC: UIViewController {
             
         }
         
+        Messageservice.innstance.gechannels { (scuss) in
+            if scuss{}
+        }
         
 }
 }

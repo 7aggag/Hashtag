@@ -19,6 +19,7 @@ let REGISTE_USER_URL = "\(MAIN)account/register"
 let LOGIN_UEL = "\(MAIN)account/login"
 let ADD_USER_URL = "\(MAIN)user/add"
 let LOGIN_WITH_EMAIL_URL = "\(MAIN)/user/byEmail/"
+let FIND_CHANELS_URL = "\(MAIN)channel"
 
 
 
