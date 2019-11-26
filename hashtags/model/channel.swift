@@ -19,4 +19,12 @@ struct channel :Codable {
     
     
     
+    
+    init(channelname : String , channeldes : String , chanelid : String ) {
+        
+        name = channelname
+        _id = chanelid
+        description = channeldes
+    }
+    
 }

@@ -75,6 +75,7 @@
                         <viewLayoutGuide key="safeArea" id="9fW-nZ-o6K"/>
                     </view>
                     <connections>
+                        <outlet property="chtitle" destination="F7P-QH-nPF" id="Kjw-ZA-13H"/>
                         <outlet property="menuebtn" destination="a0G-2F-qL1" id="Y5D-2l-ZsP"/>
                     </connections>
                 </viewController>
@@ -129,13 +130,16 @@
                                     <constraint firstAttribute="height" constant="22" id="7Ok-aH-iu1"/>
                                 </constraints>
                                 <state key="normal" image="addChannelButton"/>
+                                <connections>
+                                    <action selector="addchannelpress:" destination="94v-Kz-KYi" eventType="touchUpInside" id="TFD-NA-yUG"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VpO-Pv-9af">
                                 <rect key="frame" x="0.0" y="107.5" width="375" height="445.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="KME-ZE-wnU">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="channelcell" id="KME-ZE-wnU" customClass="channelcell" customModule="hashtags" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KME-ZE-wnU" id="UG1-bt-idi">
@@ -156,6 +160,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="channelname" destination="19f-3I-jF3" id="WXg-Uf-Qgw"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -193,6 +200,7 @@
                     <connections>
                         <outlet property="loginbtn" destination="wrs-9V-ZHi" id="gSV-Oa-g8k"/>
                         <outlet property="profileimage" destination="6sh-Lb-SgH" id="s3V-se-F1r"/>
+                        <outlet property="tabelview" destination="VpO-Pv-9af" id="O4e-Gu-E1y"/>
                         <segue destination="8u4-b6-hr8" kind="show" identifier="tologin" id="2ZR-p5-QG0"/>
                     </connections>
                 </viewController>

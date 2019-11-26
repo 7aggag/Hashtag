@@ -16,6 +16,8 @@
 		732F7E99236E393700F02068 /* gridant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732F7E98236E393700F02068 /* gridant.swift */; };
 		732F7E9B236E3BAE00F02068 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732F7E9A236E3BAE00F02068 /* ChatVC.swift */; };
 		732F7E9D236E3BCF00F02068 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732F7E9C236E3BCF00F02068 /* ChannelVC.swift */; };
+		7394F864238ACC310072D440 /* SocketServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7394F863238ACC310072D440 /* SocketServices.swift */; };
+		7394F866238B0DC10072D440 /* channelcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7394F865238B0DC10072D440 /* channelcell.swift */; };
 		73CE118A236F298000D6BC99 /* loginvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CE1189236F298000D6BC99 /* loginvc.swift */; };
 		73CE118C236F464F00D6BC99 /* createaccountvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CE118B236F464F00D6BC99 /* createaccountvc.swift */; };
 		73CE1190237079DC00D6BC99 /* Authservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CE118F237079DC00D6BC99 /* Authservice.swift */; };
@@ -46,6 +48,8 @@
 		732F7E98236E393700F02068 /* gridant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gridant.swift; sourceTree = "<group>"; };
 		732F7E9A236E3BAE00F02068 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		732F7E9C236E3BCF00F02068 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		7394F863238ACC310072D440 /* SocketServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketServices.swift; sourceTree = "<group>"; };
+		7394F865238B0DC10072D440 /* channelcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = channelcell.swift; sourceTree = "<group>"; };
 		73CE1189236F298000D6BC99 /* loginvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginvc.swift; sourceTree = "<group>"; };
 		73CE118B236F464F00D6BC99 /* createaccountvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createaccountvc.swift; sourceTree = "<group>"; };
 		73CE118F237079DC00D6BC99 /* Authservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authservice.swift; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 				732F7E98236E393700F02068 /* gridant.swift */,
 				73CE119723722FB700D6BC99 /* avatarcell.swift */,
 				73CE119B23726DEE00D6BC99 /* circularimage.swift */,
+				7394F865238B0DC10072D440 /* channelcell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 				73CE118F237079DC00D6BC99 /* Authservice.swift */,
 				73CE11932371A5FA00D6BC99 /* Userdata.swift */,
 				73CE11A7237836DD00D6BC99 /* Messageservice.swift */,
+				7394F863238ACC310072D440 /* SocketServices.swift */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -326,6 +332,8 @@
 				73CE11A323782CF100D6BC99 /* channel.swift in Sources */,
 				732F7E7F236E0BD500F02068 /* AppDelegate.swift in Sources */,
 				73CE11A8237836DD00D6BC99 /* Messageservice.swift in Sources */,
+				7394F866238B0DC10072D440 /* channelcell.swift in Sources */,
+				7394F864238ACC310072D440 /* SocketServices.swift in Sources */,
 				73CE118A236F298000D6BC99 /* loginvc.swift in Sources */,
 				732F7E94236E11EA00F02068 /* SWRevealViewController.m in Sources */,
 				73CE119823722FB700D6BC99 /* avatarcell.swift in Sources */,

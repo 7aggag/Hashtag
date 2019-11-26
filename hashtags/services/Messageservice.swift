@@ -14,6 +14,7 @@ class Messageservice :Codable {
     
     static let innstance = Messageservice()
     var channels = [channel]()
+    var selectedchannel : channel?
     
     
     func gechannels (completion : @escaping CompletionHandelar) {
@@ -24,20 +25,20 @@ class Messageservice :Codable {
                 do {
                     self.channels = try JSONDecoder().decode([channel].self, from: data)
                     completion(true)
-                    print(self.channels)
+                    NotificationCenter.default.post(name:NOTI_CHAT_LOADED , object: nil)
+                    
                 }catch let error {
                     debugPrint(error)
                 }
-                
-                
-                
             }
-            
         }
-        
-        
     }
     
     
+    
+    
+    func deletechannel(){
+        channels.removeAll()
+    }
     
 }

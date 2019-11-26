@@ -80,7 +80,7 @@ class Userdata {
         Authserices.instance.isloggedin = false
         Authserices.instance.tokenid = ""
         Authserices.instance.useremail = ""
-        
+        Messageservice.innstance.deletechannel()
         
     }
     
