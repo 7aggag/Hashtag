@@ -14,10 +14,13 @@
 		732F7E89236E0BDB00F02068 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 732F7E87236E0BDB00F02068 /* LaunchScreen.storyboard */; };
 		732F7E94236E11EA00F02068 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 732F7E93236E11EA00F02068 /* SWRevealViewController.m */; };
 		732F7E99236E393700F02068 /* gridant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732F7E98236E393700F02068 /* gridant.swift */; };
-		732F7E9B236E3BAE00F02068 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732F7E9A236E3BAE00F02068 /* ChatVC.swift */; };
 		732F7E9D236E3BCF00F02068 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732F7E9C236E3BCF00F02068 /* ChannelVC.swift */; };
 		7394F864238ACC310072D440 /* SocketServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7394F863238ACC310072D440 /* SocketServices.swift */; };
 		7394F866238B0DC10072D440 /* channelcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7394F865238B0DC10072D440 /* channelcell.swift */; };
+		7394F868238D8BBE0072D440 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7394F867238D8BBE0072D440 /* Message.swift */; };
+		7394F86A238DEFF90072D440 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7394F869238DEFF80072D440 /* KeyboardBoundView.swift */; };
+		7394F86C238DFB110072D440 /* messagecell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7394F86B238DFB110072D440 /* messagecell.swift */; };
+		7394F86D238EC75C0072D440 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732F7E9A236E3BAE00F02068 /* ChatVC.swift */; };
 		73CE118A236F298000D6BC99 /* loginvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CE1189236F298000D6BC99 /* loginvc.swift */; };
 		73CE118C236F464F00D6BC99 /* createaccountvc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CE118B236F464F00D6BC99 /* createaccountvc.swift */; };
 		73CE1190237079DC00D6BC99 /* Authservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CE118F237079DC00D6BC99 /* Authservice.swift */; };
@@ -50,6 +53,9 @@
 		732F7E9C236E3BCF00F02068 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		7394F863238ACC310072D440 /* SocketServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketServices.swift; sourceTree = "<group>"; };
 		7394F865238B0DC10072D440 /* channelcell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = channelcell.swift; sourceTree = "<group>"; };
+		7394F867238D8BBE0072D440 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		7394F869238DEFF80072D440 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
+		7394F86B238DFB110072D440 /* messagecell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messagecell.swift; sourceTree = "<group>"; };
 		73CE1189236F298000D6BC99 /* loginvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginvc.swift; sourceTree = "<group>"; };
 		73CE118B236F464F00D6BC99 /* createaccountvc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createaccountvc.swift; sourceTree = "<group>"; };
 		73CE118F237079DC00D6BC99 /* Authservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authservice.swift; sourceTree = "<group>"; };
@@ -157,6 +163,8 @@
 				73CE119723722FB700D6BC99 /* avatarcell.swift */,
 				73CE119B23726DEE00D6BC99 /* circularimage.swift */,
 				7394F865238B0DC10072D440 /* channelcell.swift */,
+				7394F869238DEFF80072D440 /* KeyboardBoundView.swift */,
+				7394F86B238DFB110072D440 /* messagecell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -165,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				73CE11A223782CF100D6BC99 /* channel.swift */,
+				7394F867238D8BBE0072D440 /* Message.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -326,13 +335,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7394F86D238EC75C0072D440 /* ChatVC.swift in Sources */,
 				73CE118C236F464F00D6BC99 /* createaccountvc.swift in Sources */,
 				73CE119223707F5E00D6BC99 /* Serconstant.swift in Sources */,
-				732F7E9B236E3BAE00F02068 /* ChatVC.swift in Sources */,
 				73CE11A323782CF100D6BC99 /* channel.swift in Sources */,
 				732F7E7F236E0BD500F02068 /* AppDelegate.swift in Sources */,
 				73CE11A8237836DD00D6BC99 /* Messageservice.swift in Sources */,
 				7394F866238B0DC10072D440 /* channelcell.swift in Sources */,
+				7394F86C238DFB110072D440 /* messagecell.swift in Sources */,
 				7394F864238ACC310072D440 /* SocketServices.swift in Sources */,
 				73CE118A236F298000D6BC99 /* loginvc.swift in Sources */,
 				732F7E94236E11EA00F02068 /* SWRevealViewController.m in Sources */,
@@ -343,6 +353,8 @@
 				73CE119F23731D7E00D6BC99 /* profilevc.swift in Sources */,
 				732F7E9D236E3BCF00F02068 /* ChannelVC.swift in Sources */,
 				73CE1190237079DC00D6BC99 /* Authservice.swift in Sources */,
+				7394F86A238DEFF90072D440 /* KeyboardBoundView.swift in Sources */,
+				7394F868238D8BBE0072D440 /* Message.swift in Sources */,
 				73CE11AB237B159000D6BC99 /* Addchannel.swift in Sources */,
 				73CE119623722E8300D6BC99 /* AvatarVC.swift in Sources */,
 			);

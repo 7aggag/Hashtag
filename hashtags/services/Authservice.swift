@@ -25,7 +25,7 @@
         var tokenid : String {
             set{ deauflts.set(newValue, forKey: TOKEN_ID)
             }
-            get{ return deauflts.value(forKey: TOKEN_ID) as! String
+            get{ return deauflts.value(forKey: TOKEN_ID) as? String ?? ""
                 }
         }
         var useremail : String {
@@ -33,7 +33,7 @@
                 deauflts.set(newValue, forKey: EMAIL)
             }
             get{
-                return deauflts.value(forKey: EMAIL) as! String
+                return deauflts.value(forKey: EMAIL) as? String ?? ""
             }
         }
         

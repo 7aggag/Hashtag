@@ -81,6 +81,8 @@ class Userdata {
         Authserices.instance.tokenid = ""
         Authserices.instance.useremail = ""
         Messageservice.innstance.deletechannel()
+        Messageservice.innstance.deletemessages()
+
         
     }
     

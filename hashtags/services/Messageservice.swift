@@ -16,6 +16,8 @@ class Messageservice :Codable {
     var channels = [channel]()
     var selectedchannel : channel?
     
+    var messages = [message]()
+    
     
     func gechannels (completion : @escaping CompletionHandelar) {
         let header = ["Authorization": "Bearer \(Authserices.instance.tokenid)" , "Content-Type" : "application/json" ]
@@ -29,16 +31,36 @@ class Messageservice :Codable {
                     
                 }catch let error {
                     debugPrint(error)
+                }}}}
+    
+    func messagebychannel(channelid:String , completion : @escaping CompletionHandelar){
+         let header = ["Authorization": "Bearer \(Authserices.instance.tokenid)" , "Content-Type" : "application/json" ]
+        Alamofire.request("\(FIND_MESSAGES_URL)\(channelid)", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header).response { (Response) in
+            if Response.error == nil {
+                self.deletemessages()
+                guard let data = Response.data else {return}
+                do {
+                    self.messages = try JSONDecoder().decode([message].self, from: data)
+                    completion(true)
+                    
+                }catch let error {
+                    debugPrint(error)
                 }
+            }else {
+                debugPrint(Response.error as Any)
+                completion(false)
             }
         }
     }
     
+  
     
-    
-    
+
     func deletechannel(){
         channels.removeAll()
     }
     
+    func deletemessages(){
+        messages.removeAll()
+    }
 }

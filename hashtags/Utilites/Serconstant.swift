@@ -20,6 +20,7 @@ let LOGIN_UEL = "\(MAIN)account/login"
 let ADD_USER_URL = "\(MAIN)user/add"
 let LOGIN_WITH_EMAIL_URL = "\(MAIN)/user/byEmail/"
 let FIND_CHANELS_URL = "\(MAIN)channel"
+let FIND_MESSAGES_URL = "\(MAIN)message/byChannel/"
 
 
 
